@@ -1,0 +1,28 @@
+// Base File
+
+body {
+  color: $base-color;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: $cormorantgaramond;
+}
+
+
+a {
+  color: $base-color;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: $josefinsans;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}

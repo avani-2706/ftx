@@ -1,0 +1,53 @@
+// Typography
+
+h1 {
+  margin-bottom: 80px;
+  color: $red;
+  font-size: 60px;
+  line-height: normal;
+  font-weight: 700;
+  font-family: $josefinsans;
+
+  @media(max-width: 767px) {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+}
+
+h2 {
+  margin-bottom: 50px;
+  color: $primary-color;
+  font-size: 40px;
+  line-height: normal;
+  font-weight: 700;
+  font-family: $josefinsans;
+
+  @media(max-width: 767px) {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+}
+
+h3 {
+  color: $primary-color;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 700;
+  font-family: $josefinsans;
+}
+
+
+h4 {
+  color: $primary-color;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 700;
+  font-family: $josefinsans;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 700;
+  font-family: $josefinsans;
+}

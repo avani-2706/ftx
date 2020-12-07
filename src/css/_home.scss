@@ -1,0 +1,404 @@
+/* Home Page
+ *
+ * - Hero
+ * - Service
+ * - Blog content
+ * - Video section
+ * - Price Section
+ * - Section Connect
+ * - Join Now
+ * - Section store
+ *
+ **/
+
+// Hero
+.section-hero {
+  padding-top: 200px;
+  font-size: 20px;
+
+  @media(max-width: 991px) {
+    padding-top: 100px;
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 50px;
+  }
+
+  .container {
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 10%;
+      display: inline-block;
+      height: 1085px;
+      max-width: 1100px;
+      width: 100%;
+      background-image: url('../assets/images/bg-shape.png');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 133%;
+      content: '';
+
+      @media(max-width: 1440px) {
+        left: 5%;
+        width: 95%;
+      }
+
+      @media(max-width: 767px) {
+        left: 0;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 75px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+// Service
+.section-service {
+  padding: 0 0 70px;
+  font-size: 16px;
+  text-align: center;
+
+  img {
+    margin-bottom: 25px;
+  }
+}
+
+// Blog content
+.section-blog-content {
+  position: relative;
+  overflow: hidden;
+  color: $primary-color;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: -2;
+    display: inline-block;
+    height: 1027px;
+    width: 976px;
+    background-image: url('../assets/images/oval_shape.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: '';
+
+    @media(max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  .row {
+    margin-bottom: 245px;
+
+    @media(max-width: 1200px) {
+      margin-bottom: 122px;
+    }
+
+    @media(max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .col-md-6 {
+      height: 100%;
+    }
+
+    .justify-content-end {
+      @media(max-width: 767px) {
+        justify-content: flex-start !important;
+      }
+    }
+  }
+
+  .content {
+    margin-bottom: 50px;
+  }
+
+  .blog-img {
+    position: relative;
+
+    @media(max-width: 767px) {
+      margin-top: 100px;
+    }
+
+    &:before {
+      position: absolute;
+      top: -90px;
+      left: 95px;
+      z-index: -1;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-color: $green;
+      content: '';
+
+      @media(max-width: 1200px) {
+        top: -45px;
+        left: 50px;
+      }
+    }
+  }
+
+  .flex-row-reverse {
+    .blog-img {
+      @media(min-width: 768px) {
+        &:before {
+          left: -50px;
+        }
+      }
+      @media(min-width: 1201px) {
+        &:before {
+          left: -95px;
+        }
+      }
+    }
+  }
+}
+
+// Video section
+.section-video {
+  position: relative;
+  padding: 100px 0;
+  color: $white;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: $josefinsans;
+  text-align: center;
+
+  @media(max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($red, .5);
+    content: '';
+  }
+
+  h2 {
+    margin-bottom: 75px;
+    font-family: $josefinsans;
+    text-align: center;
+  }
+
+  .video-icon {
+    margin-bottom: 125px;
+
+    @media(max-width: 991px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .number {
+    font-size: 50px;
+  }
+
+  .video {
+    .bg-video-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      
+    }
+  }
+}
+
+// Price Section
+.section-price {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: $josefinsans;
+  text-align: center;
+
+  .price-card {
+    padding: 60px 50px;
+    line-height: normal;
+
+    @media(max-width: 1200px) {
+      padding: 30px 15px;
+    }
+
+    @media(max-width: 991px) {
+      max-width: 350px;
+      margin: 0 auto 30px;
+    }
+
+    .label {
+      margin-bottom: 50px;
+    }
+
+    .price {
+      display: flex;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      font-family: $josefinsans;
+      justify-content: center;
+
+
+      .doller {
+        margin-right: 30px;
+      }
+
+      .amount {
+        font-size: 70px;
+      }
+
+      .month {
+        display: inline-block;
+        margin-top: 30px;
+        text-transform: capitalize;
+      }
+    }
+
+    .user-specify {
+      margin: 90px 0;
+      color: rgba($green1 , .5);
+      font-size: 20px;
+      line-height: 40px;
+      white-space: nowrap;
+
+      p {
+        margin-bottom: 0;
+
+      }
+    }
+
+    &.bg-red {
+      .user-specify {
+        color: $white;
+      }
+
+      .btn {
+        border-color: $white;
+      }
+    }
+  }
+
+}
+
+// Section Connect
+.section-connect {
+  padding-top: 0;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 700;
+  font-family: $josefinsans;
+
+  @media(max-width: 767px) {
+    .col-md-4 {
+      text-align: center;
+
+      &:last-child {
+        .connect-card {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .connect-card {
+      display: inline-block;
+      margin-bottom: 30px;
+      text-align: left;
+
+    }
+  }
+
+  h2 {
+    max-width: 690px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    margin-bottom: 12px;
+  }
+}
+
+// Join Now
+.section-join-now {
+  padding: 100px 0;
+
+  @media(max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  .col-md-8 {
+    @media(max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Section store
+.section-store {
+  .store-card {
+    padding: 60px 35px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 700;
+
+    @media(max-width: 991px) {
+      padding: 30px 15px;
+    }
+
+    @media(max-width: 767px) {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    .head {
+      margin-bottom: 50px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 25px;
+      }
+
+      h5 {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      max-width: 290px;
+      margin-bottom: 70px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 35px;
+      }
+    }
+
+    .Store-price {
+      span {
+        margin-right: 25px;
+        font-family: $josefinsans;
+      }
+    }
+  }
+}

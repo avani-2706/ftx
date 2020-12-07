@@ -1,0 +1,26 @@
+//  Button
+
+.btn,
+input[type="submit"] {
+  height: 70px;
+  min-width: 255px;
+  padding: 24px;
+  border-radius: 5px;
+  background-color: $red;
+  color: $white;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: $josefinsans;
+  text-align: center;
+  animation-duration: 3s; 
+
+  &:hover {
+    color: $white;
+    transform: translateY(-6px);
+  }
+
+  @media(max-width: 991px) {
+    min-width: 155px;
+  }
+}
+

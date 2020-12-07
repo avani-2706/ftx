@@ -1,0 +1,34 @@
+//footer
+
+.footer {
+  padding: 125px 0 145px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: $josefinsans;
+
+  @media(max-width: 991px) {
+    padding: 75px 0;
+  }
+
+  @media(max-width: 767px) {
+    padding: 50px 0;
+
+    .col-sm-6 {
+      margin-bottom: 15px;
+    }
+  }
+
+  h4 {
+    @extend .color-red;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+}

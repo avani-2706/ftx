@@ -1,0 +1,57 @@
+/**
+ * Global component
+ *
+ * - Section
+ * - Color Classes
+ * - Background Classes
+ *
+ **/
+
+// Section
+.section {
+  padding: 150px 0;
+
+  @media(max-width: 991px) {
+    padding: 75px 0;
+  }
+
+  @media(max-width: 767px) {
+    padding: 50px 0;
+  }
+}
+
+// Color Classes
+.color-red {
+  color: $red;
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-yellow {
+  color: $yellow;
+}
+
+.color-light-green {
+  color: $light-green;
+}
+
+.color-green {
+  color: $green;
+}
+
+// Background Classes
+.bg-base {
+  background-color: $base-color;
+  @extend .color-white;
+}
+
+.bg-red {
+  background-color: $red;
+  @extend .color-white;
+}
+
+.bg-light-green {
+  background-color: $light-green;
+}
